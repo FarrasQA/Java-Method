@@ -1,0 +1,24 @@
+package org.example;
+
+public abstract class BaseModel {
+
+    //inheritance
+    public void BrandSepatu() {
+        System.out.println("Brand Sepatu Ortuseight");
+    }
+
+    //polymorphism
+    public void UserLogin() {
+        System.out.println("User login dengan input data valid");
+    }
+
+    //abstraction
+    abstract class BeliProduk {
+
+        public abstract void Pembayaran();
+
+        public void Tunai() {
+            System.out.println("Produk berhasil dibeli");
+        }
+    }
+}
