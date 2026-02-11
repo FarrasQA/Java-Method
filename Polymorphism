@@ -1,0 +1,27 @@
+package org.example;
+
+public class Polymorphism extends BaseModel {
+
+    @Override //untuk polymorphism override
+    public void UserLogin() {
+        System.out.println(" User login dengan input akun google valid");
+        System.out.println(" User login dengan input username dan password valid");
+    }
+
+    //untuk polymorphism overloading
+    public static String infouser(String namauser, String pekerjaan) {
+        return namauser + pekerjaan;
+    }
+
+    public static int infouser(int iduser, int umur) {
+        return iduser + umur;
+    }
+
+    public static void main(String[] args) {
+        Polymorphism Login = new Polymorphism();
+        Login.UserLogin();
+
+        System.out.println(infouser("Adi", "Guru"));
+        System.out.println(infouser(1, 30));
+    }
+}
