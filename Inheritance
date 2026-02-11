@@ -1,0 +1,15 @@
+package org.example;
+
+public class Inheritance extends BaseModel {
+
+    public static void KategoriSepatu() {
+        System.out.println("Kategori Sepatu Running");
+    }
+
+    public static void main(String[] args) {
+        Inheritance Sepatu = new Inheritance();
+        Sepatu.BrandSepatu();
+        Sepatu.KategoriSepatu();
+
+    }
+}
